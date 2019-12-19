@@ -1,0 +1,42 @@
+.__header-main {
+    background: rgba(255, 218, 185, .5);
+    width: 60vw;
+    height: 10vh;
+    border-bottom-right-radius: 5vw;
+    
+}
+
+.__header-main h1{
+    text-align: center;
+    padding-top: 1vh;
+}
+
+.__header-background {
+    width: 100vw;
+    height: 30vh;
+    background: url('../Images/Untitled.png');
+    background-repeat: no-repeat;
+    padding-top: 5vh;
+    margin-left: -1vw;
+}
+
+.__header-navbar-main {
+    width: 100vw;
+    height: 5vh;
+    background: gray;
+    display: flex;
+}
+
+.__header-navbar-main-links {
+    height: 5vh;
+    width: 20vw;
+    background: #2f2f2f;
+    border: 1px solid black;
+    color: white;
+    outline: none;
+    text-align: center;
+}
+
+.__header-navbar-main-links:active {
+    border: 2px solid gray
+}

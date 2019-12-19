@@ -1,0 +1,23 @@
+{
+  "name": "finalportfolio",
+  "version": "1.0.0",
+  "description": "A portfolio updated using the newest techniques ive learned.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"cd server && node app.js\" \"cd client && npm start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ningauble479/FinalPortfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ningauble479/FinalPortfolio/issues"
+  },
+  "homepage": "https://github.com/Ningauble479/FinalPortfolio#readme",
+  "dependencies": {
+    "concurrently": "^5.0.2"
+  }
+}
