@@ -1,0 +1,38 @@
+.__references-main {
+    min-height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+    flex-wrap: wrap;
+}
+
+.__references-card-main {
+    width: 30vw;
+    height: 50vh;
+    background: whitesmoke;
+    border: 1px solid black;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 3vw;
+    margin-top: 10vh
+}
+
+.__references-card-header {
+    height: 15%;
+    border-bottom: 1px solid black;
+    padding-left: 2vw;
+}
+
+.__references-card-body {
+    height: 60%;
+    padding-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.__references-card-footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid black;
+}
