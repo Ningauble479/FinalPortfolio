@@ -4,8 +4,11 @@
   "description": "A portfolio updated using the newest techniques ive learned.",
   "main": "index.js",
   "scripts": {
+    "install": "cd client && npm i",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"cd server && node app.js\" \"cd client && npm start\""
+    "start": "concurrently \"cd server && node app.js\" \"cd client && npm start\"",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
