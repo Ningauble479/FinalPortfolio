@@ -1,0 +1,12 @@
+.__skillset-main {
+    height: 100vh;
+    width: 100vw;
+    background: whitesmoke;
+    padding-top: 10vh;
+}
+
+.__skillset-languages {
+    height: 30vh;
+    width: 100vw;
+    background: gray;
+}
