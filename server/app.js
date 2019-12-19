@@ -1,7 +1,7 @@
 var express = require('express');
 var path = require('path');
 
-var port = process.env.PORT || 3001;
+var port = process.env.PORT || 8080;
 var indexRouter = require('./routes/index');
 
 var app = express();
