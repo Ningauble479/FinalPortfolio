@@ -1,0 +1,75 @@
+.__testing-Cards {
+    width: 20vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* padding-top: 2vh; */
+    border: 2px solid black;
+    border-radius: 3vw;
+    box-shadow: 10px 5px 5px black;
+}
+
+.__testing-Cards-Holder {
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 5vh;
+
+}
+
+.__testing-Cards-Header {
+    height: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.__testing-Modal-Main {
+    position: absolute;
+    left: 15vw;
+    top: 50vh;
+    height: 70vh;
+    width: 70vw;
+    border: 2px solid black;
+    background: white;
+}
+
+.__testing-Modal-Header {
+    height: 20%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.__testing-Modal-Column {
+    height: 80%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+    text-align: center;
+    overflow: auto;
+}
+
+.__testing-Modal-Body {
+    display: flex;
+    height: 100%
+}
+
+.__testing-Modal-Searches {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+
+}
+
+.__testing-Modal-Searches button {
+    height: 100%;
+    width: 25%;
+    background: orange;
+    color: black;
+    border: 1px solid black;
+}
