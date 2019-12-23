@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/skillset.css'
 
+
 function skillset(){
     return(
         <div className='__skillset-main'>
@@ -12,6 +13,9 @@ function skillset(){
                 <li>React. Level: Advanced</li>
                 <li>mongoDB/Mongoose. Level: Profficient</li>
                 </ul>
+            </div>
+            <div className='__skillset-OW-cards'>
+                <button>API test</button>
             </div>
             
         </div>
