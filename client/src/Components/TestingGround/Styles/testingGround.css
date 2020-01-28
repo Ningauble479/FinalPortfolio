@@ -1,6 +1,6 @@
 .__testing-Cards {
     width: 20vw;
-    height: 15vh;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -9,6 +9,7 @@
     border: 2px solid black;
     border-radius: 3vw;
     box-shadow: 10px 5px 5px black;
+    margin-bottom: 5vh
 }
 
 .__testing-Cards-Holder {
@@ -28,9 +29,9 @@
 }
 
 .__testing-Modal-Main {
-    position: absolute;
+    position: fixed;
     left: 15vw;
-    top: 50vh;
+    top: 15vh;
     height: 70vh;
     width: 70vw;
     border: 2px solid black;
