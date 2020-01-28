@@ -21,7 +21,10 @@ class main extends Component {
             cardDisplay: null,
             modalOpen: false,
             cardDisplayEquip: null,
-            cardDisplayLevels: null
+            cardDisplayLevels: null,
+            searched: null,
+            cardDisplayM: null,
+            openModalM: false
         }
 
         this.constructURL = this.constructURL.bind(this)
@@ -35,8 +38,12 @@ class main extends Component {
 
     closeModal(e){
         (e).preventDefault()
+        if(e.target.value == 'class'){
         this.setState({modalOpen: false})
-
+        }
+        else if(e.target.value == 'monster'){
+            this.setState({openModalM: false})
+        }
     }
 
     handleChange(e) {
@@ -53,6 +60,7 @@ class main extends Component {
         (e).preventDefault()
         console.log(this.state.search)
         let url = 'http://www.dnd5eapi.co/api/' + e.target.value
+        this.setState({searched: e.target.value})
         console.log(url)
         this.DandDClasses(url)
 
@@ -74,12 +82,17 @@ class main extends Component {
         axios.get(e.target.value)
         .then(
             results => {
+                if(this.state.searched == 'classes'){
                 this.setState({cardDisplay: results.data, modalOpen: true})
-                console.log(results.data)
+                setTimeout(this.startingEquip, 500)
+                setTimeout(this.classLevels, 500)
+                console.log(results.data)}
+                else if(this.state.searched == 'monsters'){
+                    console.log(results.data)
+                    this.setState({cardDisplayM: results.data, openModalM: true})
+                }
             }
         )
-        setTimeout(this.startingEquip, 500)
-        setTimeout(this.classLevels, 500)
     }
 
     startingEquip(){
